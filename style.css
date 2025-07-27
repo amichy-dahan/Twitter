@@ -1,0 +1,10 @@
+.post-text{
+    font-weight: bold;
+}
+
+.post-text{
+    width:500px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
