@@ -3,8 +3,26 @@
 }
 
 .post-text{
+    padding: 20px;
     width:500px;
     border-radius: 8px;
     margin-top: 5px;
     border: 1px solid gray;
+}
+.comments{
+    margin-top: 10px;
+}
+
+.comment{
+display: flex;
+  flex-direction: row-reverse; /* שורה רגילה - מימין לשמאל */
+  align-items: center;
+  justify-content: start;
+  gap: 8px; /* מרווח בין X לטקסט */
+    
+    margin-left: 20px;
+font-weight:300;
+}
+#delete-comment{
+   color: red;
 }

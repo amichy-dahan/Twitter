@@ -10,8 +10,12 @@ export class Twitter {
     }
 
     addPost(text) {
+        if(text === ""){
+
+        }else{
         const newPost = { id: `p${this.postIdCounter++}`, text: text, comments: [] };
         this.posts.push(newPost);
+        }
     }
 
     removePost(postID) {
@@ -19,11 +23,20 @@ export class Twitter {
     }
 
     addComment(postID, text) {
+
+
+        if (text === ""){
+
+        }else{
         const post = this.posts.find(post => post.id === postID);
         if (post) {
             const newComment = { id: `c${this.commentIdCounter++}`, text: text };
             post.comments.push(newComment);
+            console.log(newComment.id)
+            
         }
+    }
+   
     }
 
     removeComment(postID, commentID) {
